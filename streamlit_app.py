@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Prueba", page_icon="scr/fondo.jpg", layout="wide")
-def main():
+def css():
     # Aplicar estilo CSS para el fondo
     st.markdown(
         """
@@ -13,7 +13,8 @@ def main():
         </style>
         """,
         unsafe_allow_html=True)
-
+if __name__ == '__css__':
+    css()
 # ---- HEADER SECTION ----
 with st.container():
     st.subheader("Hola, soy Marcelo Yuba :wave:")
