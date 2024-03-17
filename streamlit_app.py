@@ -4,9 +4,9 @@ st.set_page_config(page_title="Prueba", page_icon=":tada:", layout="wide")
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.subheader("Hi, I am Sven :wave:")
-    st.title("A Data Analyst From Germany")
+    st.subheader("Hola, soy Marcelo Yuba :wave:")
+    st.title("Un Data Analyst de Buenos Aires, Argentina")
     st.write(
-        "I am passionate about finding ways to use Python and VBA to be more efficient and effective in business settings."
+        "Soy apacionado en el analisis de datos usando, Power BI y Python, tratando de forma mas eficiente,  obtener resultados para negocios."
     )
-    st.write("[Learn More >](https://pythonandvba.com)")
+    st.write("[Mas sobre mi >](https://github.com/marceloyuba)")
