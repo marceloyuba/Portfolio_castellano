@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Prueba", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Prueba", page_icon="scr/fondo.jpg", layout="wide")
 def main():
     # Aplicar estilo CSS para el fondo
     st.markdown(
