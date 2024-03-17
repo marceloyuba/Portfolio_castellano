@@ -1,6 +1,18 @@
 import streamlit as st
 
 st.set_page_config(page_title="Prueba", page_icon=":tada:", layout="wide")
+def main():
+    # Aplicar estilo CSS para el fondo
+    st.markdown(
+        """
+        <style>
+        .reportview-container {
+            background: url("scr/fondo.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True)
 
 # ---- HEADER SECTION ----
 with st.container():
