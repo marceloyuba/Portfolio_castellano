@@ -1,4 +1,5 @@
 import streamlit as st
+import Functions
 
 st.set_page_config(page_title="Prueba", page_icon="scr/fondo.jpg", layout="wide")
 def css():
@@ -31,3 +32,27 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+def Developer(desarrollador):
+    resultadodeveloper = Functions.Developer(desarrollador)
+    return resultadodeveloper
+
+st.markdown(""" 
+    <html>
+        <body style="background-color: #000000;">
+            <h1 style="color: #ffff00;">INSTRUCCIONES</h1>
+            <h3 style="color: #ffff00; font-family: 'Trebuchet MS';">
+                1. Haga clic en "Try it out".<br>
+                2. Ingrese el desarrollador en el cuadro de abajo.<br>
+                3. Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.<br>
+                4. Sugerencia de usuarios: Valve, Ubisoft, Capcom, Epic Games, Rockstar Games, Sega.<br>
+                5. Para cambiar de usuario, copie y pegue de las sugerencias y presione Enter nuevamente.
+            </h3>         
+        </body>
+    </html>
+    """, unsafe_allow_html=True)
+
+desarrollador = st.text_input("Ingrese el nombre del desarrollador", "Valve")
+if st.button("Consultar"):
+    developer_result = Developer(desarrollador)
+    st.write(developer_result)
