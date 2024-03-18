@@ -28,7 +28,7 @@ def main():
     st.title('Dashboard de Power BI en Streamlit')
     
     # Inserta el iframe con la URL de tu dashboard de Power BI
-    st.markdown('<iframe width="1000" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjNDA0YmItMmRhZC00ZDhlLWFmOWYtZTZiMWMxYWY3ODAzIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
+    st.markdown('<iframe width="1000" height="800" align = "center" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjNDA0YmItMmRhZC00ZDhlLWFmOWYtZTZiMWMxYWY3ODAzIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
@@ -39,15 +39,13 @@ def Developer(desarrollador):
 
 st.markdown(""" 
     <html>
-        <body style="background-color: #000000;">
-            <h1 style="color: #ffff00;">INSTRUCCIONES</h1>
-            <h3 style="color: #ffff00; font-family: 'Trebuchet MS';">
-                1. Haga clic en "Try it out".<br>
-                2. Ingrese el desarrollador en el cuadro de abajo.<br>
-                3. Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.<br>
-                4. Sugerencia de usuarios: Valve, Ubisoft, Capcom, Epic Games, Rockstar Games, Sega.<br>
-                5. Para cambiar de usuario, copie y pegue de las sugerencias y presione Enter nuevamente.
-            </h3>         
+        <body>
+            <h2>INSTRUCCIONES</h2>            
+                1. Ingrese el desarrollador en el cuadro de abajo.<br>
+                2. Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.<br>
+                3. Sugerencia de usuarios: Valve, Ubisoft, Capcom, Epic Games, Rockstar Games, Sega.<br>
+                4. Para cambiar de usuario, copie y pegue de las sugerencias y presione consultar nuevamente.
+            </h4>         
         </body>
     </html>
     """, unsafe_allow_html=True)
@@ -56,3 +54,27 @@ desarrollador = st.text_input("Ingrese el nombre del desarrollador", "Valve")
 if st.button("Consultar"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
+    
+    
+def recomendacion_usuario(Id_Usuario):
+    resultadotop_game = Functions.recomendacion_usuario(Id_Usuario)
+    return resultadotop_game
+
+st.markdown(""" 
+    <html>
+        <body>
+            <h1>INSTRUCCIONES</h1>
+            <h4>
+                1. Ingrese el usuario en el cuadro de abajo.<br>
+                2. Se consulta por usuario y devuelve una lista de recomendaciones para el mismo en base de otros productos similares a los que tiene.<br>
+                3. Sugerencia de usuarios: fui312, mailiam123, ScoutCounterAttack, halofan360, tarjla.<br>
+                4. Para cambiar de usuario, copie y pegue de las sugerencias y presione Execute nuevamente.
+            </h4>         
+        </body>
+    </html>
+    """, unsafe_allow_html=True)
+
+Id_Usuario = st.text_input("Ingrese el nombre del usuario", "fui312")
+if st.button("Consultar"):
+    recomendacion_result = recomendacion_usuario(Id_Usuario)
+    st.write(recomendacion_result)
