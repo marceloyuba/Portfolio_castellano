@@ -45,7 +45,7 @@ st.markdown("""
                 2. Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.<br>
                 3. Sugerencia de usuarios: Valve, Ubisoft, Capcom, Epic Games, Rockstar Games, Sega.<br>
                 4. Para cambiar de usuario, copie y pegue de las sugerencias y presione consultar nuevamente.
-            </h4>         
+                     
         </body>
     </html>
     """, unsafe_allow_html=True)
@@ -64,12 +64,12 @@ st.markdown("""
     <html>
         <body>
             <h1>INSTRUCCIONES</h1>
-            <h4>
+            
                 1. Ingrese el usuario en el cuadro de abajo.<br>
                 2. Se consulta por usuario y devuelve una lista de recomendaciones para el mismo en base de otros productos similares a los que tiene.<br>
                 3. Sugerencia de usuarios: fui312, mailiam123, ScoutCounterAttack, halofan360, tarjla.<br>
                 4. Para cambiar de usuario, copie y pegue de las sugerencias y presione Execute nuevamente.
-            </h4>         
+                     
         </body>
     </html>
     """, unsafe_allow_html=True)
