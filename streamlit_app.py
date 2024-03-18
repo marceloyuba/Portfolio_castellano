@@ -75,6 +75,6 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 Id_Usuario = st.text_input("Ingrese el nombre del usuario", "fui312")
-if st.button2("Consultar Modelo"):
+if st.button("Consultar Modelo"):
     recomendacion_result = recomendacion_usuario(Id_Usuario)
     st.write(recomendacion_result)
