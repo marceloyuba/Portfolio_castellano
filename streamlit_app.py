@@ -85,20 +85,11 @@ if st.button("Consultar Modelo"):
     st.write(recomendacion_result)
     
 
-def main():
+def Dash():
     st.title('Dashboard de Power BI en Streamlit')
     
     # Inserta el iframe con la URL de tu dashboard de Power BI
     st.markdown('<iframe width="1000" height="800" align = "center" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjNDA0YmItMmRhZC00ZDhlLWFmOWYtZTZiMWMxYWY3ODAzIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
-    
-    st.sidebar.title("Menú de Navegación")
-    seleccion_pagina = st.sidebar.radio("Ir a", ("Inicio", "Opción 1", "Opción 2"))
-
-    if seleccion_pagina == "Inicio":
-        pagina_inicio()
-    elif seleccion_pagina == "Opción 1":
-        pagina_opcion1()
-    elif seleccion_pagina == "Opción 2":
-        pagina_opcion2()
-if __name__ == '__main__':
-    main()
+        
+if __name__ == '__Dash__':
+    Dash()
