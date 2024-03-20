@@ -24,6 +24,17 @@ with st.container():
         "Soy apasionado en el analisis de datos usando, Power BI y Python, tratando de forma mas eficiente,  obtener resultados para negocios."
     )
     st.write("[Mas sobre mi >](https://github.com/marceloyuba)")
+def pagina_inicio():
+    st.title("Página de Inicio")
+    st.write("Bienvenido a la página de inicio. Esta es la primera página.")
+
+def pagina_opcion1():
+    st.title("Página Opción 1")
+    st.write("Esta es la página de la Opción 1.")
+
+def pagina_opcion2():
+    st.title("Página Opción 2")
+    st.write("Esta es la página de la Opción 2.")
 def main():
     st.title('Dashboard de Power BI en Streamlit')
     
@@ -89,15 +100,5 @@ if st.button("Consultar Modelo"):
     recomendacion_result = recomendacion_usuario(Id_Usuario)
     st.write(recomendacion_result)
     
-def pagina_inicio():
-    st.title("Página de Inicio")
-    st.write("Bienvenido a la página de inicio. Esta es la primera página.")
 
-def pagina_opcion1():
-    st.title("Página Opción 1")
-    st.write("Esta es la página de la Opción 1.")
-
-def pagina_opcion2():
-    st.title("Página Opción 2")
-    st.write("Esta es la página de la Opción 2.")
 
