@@ -86,6 +86,16 @@ if st.button("Consultar Modelo"):
     
 
 def main():
+    st.markdown(
+        """
+        <style>
+        .reportview-container {
+            background: url("scr/fondo.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True)
     st.title('Dashboard de Power BI en Streamlit')
     
     # Inserta el iframe con la URL de tu dashboard de Power BI
