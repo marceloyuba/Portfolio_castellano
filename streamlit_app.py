@@ -79,3 +79,26 @@ Id_Usuario = st.text_input("Ingrese el nombre del usuario", "fui312")
 if st.button("Consultar Modelo"):
     recomendacion_result = recomendacion_usuario(Id_Usuario)
     st.write(recomendacion_result)
+    
+def pagina_inicio():
+    st.title("Página de Inicio")
+    st.write("Bienvenido a la página de inicio. Esta es la primera página.")
+
+def pagina_opcion1():
+    st.title("Página Opción 1")
+    st.write("Esta es la página de la Opción 1.")
+
+def pagina_opcion2():
+    st.title("Página Opción 2")
+    st.write("Esta es la página de la Opción 2.")
+
+def main():
+    st.sidebar.title("Menú de Navegación")
+    seleccion_pagina = st.sidebar.radio("Ir a", ("Inicio", "Opción 1", "Opción 2"))
+
+    if seleccion_pagina == "Inicio":
+        pagina_inicio()
+    elif seleccion_pagina == "Opción 1":
+        pagina_opcion1()
+    elif seleccion_pagina == "Opción 2":
+        pagina_opcion2()
