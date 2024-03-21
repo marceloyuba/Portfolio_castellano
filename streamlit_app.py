@@ -1,7 +1,7 @@
 import streamlit as st
 import Functions
 
-st.set_page_config(page_title="Prueba", page_icon="scr/fondo.jpg", layout="wide")
+st.set_page_config(page_title="Porfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
 def css():
     # Aplicar estilo CSS para el fondo
     st.markdown(
@@ -23,7 +23,8 @@ with st.container():
     st.write(
         "Soy un apasionado en el analisis de datos usando, Power BI y Python, tratando de forma mas eficiente,  obtener resultados para tu negocio."
     )
-    st.write("[Mas sobre mi >](https://github.com/marceloyuba)")
+    st.write("[Mi Github >](https://github.com/marceloyuba)")
+    st.write("[Mi LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 def pagina_inicio():
     st.title("Página de Inicio")
     st.write("Bienvenido a la página de inicio. Esta es la primera página.")
