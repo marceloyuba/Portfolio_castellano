@@ -24,7 +24,7 @@ def main():
         """
         <style>
             body {
-                background-image: url("ruta/a/tu/imagen.jpg");
+                background-image: url("scr/fondo.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
             }
