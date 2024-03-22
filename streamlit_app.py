@@ -1,5 +1,6 @@
 import streamlit as st
 import Functions
+import base64
 
 st.set_page_config(page_title="Porfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
 def local_css(file_name):
@@ -7,10 +8,19 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 local_css("style/style.css")
 
+@st.experimental_memo
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+
+img = get_img_as_base64("scr/fondo.jpg")
+
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"]{
-    background-iamge: url(scr/fondo.jpg)
+    background-image: url("data:image/jpg;base64,{img}");
     backgrund-size: cover
 }
 </style>
