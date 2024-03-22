@@ -1,6 +1,6 @@
 import streamlit as st
 import Functions
-import base64
+
 
 page_bg_img ="""
 <style>
@@ -13,6 +13,8 @@ background-attachment: local;
 }}
 </style>
 """
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.set_page_config(page_title="Porfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
 
 def local_css(file_name):
