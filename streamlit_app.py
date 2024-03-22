@@ -2,6 +2,12 @@ import streamlit as st
 import Functions
 
 st.set_page_config(page_title="Porfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+local_css("style/style.css")
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -14,6 +20,18 @@ with st.container():
     st.write("[Mi LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
 def main():
+    st.markdown(
+        """
+        <style>
+            body {
+                background-image: url("ruta/a/tu/imagen.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown(
         """
         <style>
