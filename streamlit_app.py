@@ -16,14 +16,6 @@ background-attachment: local;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
-
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-local_css("style/style.css")
-
 # ---- HEADER SECTION ----
 with st.container():
     st.subheader("Hola, soy Marcelo Yuba :wave:")
@@ -35,14 +27,7 @@ with st.container():
     st.write("[Mi LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
 def main():
-    st.markdown(
-    """
-    <style>
     
-    </style>
-    """,
-    unsafe_allow_html=True
-)
     st.title('Dashboard de Power BI en Streamlit')
     
     # Inserta el iframe con la URL de tu dashboard de Power BI
