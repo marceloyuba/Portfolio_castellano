@@ -2,6 +2,17 @@ import streamlit as st
 import Functions
 import base64
 
+page_bg_img ="""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
+background-size: 180%;
+background-position: top left;
+background-repeat: no-repeat;
+background-attachment: local;
+}}
+</style>
+"""
 st.set_page_config(page_title="Porfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
 
 def local_css(file_name):
@@ -24,13 +35,7 @@ def main():
     st.markdown(
     """
     <style>
-    [data-testid="stAppViewContainer"] > .main {{
-    background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
-    background-size: 180%;
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-attachment: local;
-}}  
+    
     </style>
     """,
     unsafe_allow_html=True
