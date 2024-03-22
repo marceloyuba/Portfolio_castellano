@@ -24,6 +24,7 @@ def main():
         """
         <style>
             body {
+                background-color: dodgerblue;
                 background-image: url("scr/fondo.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -32,16 +33,6 @@ def main():
         """,
         unsafe_allow_html=True
     )
-    st.markdown(
-        """
-        <style>
-        .reportview-container {
-            background: url("scr/fondo.jpg") no-repeat center center fixed;
-            background-size: cover;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True)
     st.title('Dashboard de Power BI en Streamlit')
     
     # Inserta el iframe con la URL de tu dashboard de Power BI
