@@ -5,9 +5,17 @@ st.set_page_config(page_title="Porfolio Marcelo Yuba", page_icon="scr/fondo.jpg"
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-
 local_css("style/style.css")
+
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"]{
+    background-iamge: url(scr/fondo.jpg)
+    backgrund-size: cover
+}
+</style>
+"""
+st.markdown(page_bg_imgm, unsafe_allow_html=True)
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -23,12 +31,7 @@ def main():
     st.markdown(
         """
         <style>
-            body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                background-color: dodgerblue;
-                background-image: url("scr/fondo.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
+            
         </style>
         """,
         unsafe_allow_html=True
