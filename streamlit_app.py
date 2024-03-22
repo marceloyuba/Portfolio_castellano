@@ -22,13 +22,15 @@ with st.container():
 
 def main():
     st.markdown(
-        """
-        <style>
-            
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    """
+    <style>
+    .reportview-container {
+        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+    }   
+    </style>
+    """,
+    unsafe_allow_html=True
+)
     st.title('Dashboard de Power BI en Streamlit')
     
     # Inserta el iframe con la URL de tu dashboard de Power BI
