@@ -8,24 +8,27 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 local_css("style/style.css")
 
-@st.experimental_memo
-def get_img_as_base64(file):
-    with open(file, "rb") as f:
+@st.cache(allow_output_mutation=True)
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
+def set_png_as_page_bg(png_file):
+    bin_str = get_base64_of_bin_file(png_file)
+    page_bg_img = '''
+    <style>
+    body {
+    background-image: url("data:image/png;base64,%s");
+    background-size: cover;
+    }
+    </style>
+    ''' % bin_str
+    
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    return
 
-img = get_img_as_base64("scr/fondo.jpg")
-
-page_bg_img = """
-<style>
-[data-testid="stAppViewContainer"]{
-    background-image: url("data:image/jpg;base64,{img}");
-    backgrund-size: cover
-}
-</style>
-"""
-st.markdown(page_bg_img, unsafe_allow_html=True)
+set_png_as_page_bg('scr/fondo.png')
 
 # ---- HEADER SECTION ----
 with st.container():
