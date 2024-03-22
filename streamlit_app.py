@@ -23,7 +23,7 @@ def main():
     st.markdown(
         """
         <style>
-            body {
+            body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 background-color: dodgerblue;
                 background-image: url("scr/fondo.jpg");
                 background-size: cover;
