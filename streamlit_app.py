@@ -1,7 +1,5 @@
-import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
-from PIL import Image
+
 
 
 
@@ -13,13 +11,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-img_tec = Image.open("scr/taxi.png")
+img_tec = "scr/taxi.png"
 
 # ---- HEADER SECTION ----
 with st.container():        
