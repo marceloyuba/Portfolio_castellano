@@ -32,7 +32,6 @@ with st.container():
 
 page_bg_img = """
 <style>
-
 [data-testid="stAppViewContainer"] > .main {
 background-image: url("https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/fondoTaxi.png?raw=true");
 background-position: top left;
@@ -40,8 +39,6 @@ background-repeat: repeat;
 background-attachment: fixed;
 background-size: cover;
 }
-
 </style>
 """
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
