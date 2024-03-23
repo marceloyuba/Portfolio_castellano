@@ -1,6 +1,22 @@
 import streamlit as st
 
+# Agregar el enlace a la hoja de estilos de Google Fonts
+st.markdown("""
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    """, unsafe_allow_html=True)
 
+# Definir el estilo CSS para aplicar la fuente deseada
+css = """
+    <style>
+        /* Aplicar la fuente a todos los elementos de texto */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+"""
+
+# Aplicar el estilo CSS
+st.markdown(css, unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="Portfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
