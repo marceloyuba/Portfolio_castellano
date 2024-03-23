@@ -9,7 +9,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-img_contact_form = Image.open("images/yt_contact_form.png")
+
 img_tec = Image.open("scr/taxis.png")
 
 # ---- HEADER SECTION ----
