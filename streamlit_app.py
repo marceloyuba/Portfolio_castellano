@@ -15,7 +15,7 @@ with st.container():
     st.header("Hola, soy Marcelo Yuba :wave:")
     st.title("Un Data Analyst  y Data Scientist de Buenos Aires, Argentina")
     st.write(
-        "Apasionado en el analisis de datos usando, Power BI y Python, tratando de forma mas eficiente,  obtener resultados para tu negocio."
+        "Apasionado en el analisis de datos usando, Power BI y Python, tratando de forma mas eficiente,  obtener resultados para tu negocio o empresa."
     )
     st.write("[Mi Github >](https://github.com/marceloyuba)")
     st.write("[Mi LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
@@ -31,8 +31,8 @@ with st.container():
 
     # En la primera columna, puedes agregar texto u otros elementos si lo deseas
     with col1:
-        st.header("Texto en la columna 1")
-        st.write("Puedes poner cualquier contenido aquí.")
+        st.header("Utilizando diferentes tecnologias, me permiten hacer analisis de datos, Dashboards interactivos")
+        
 
     # En la segunda columna, puedes mostrar la imagen
     with col2:
