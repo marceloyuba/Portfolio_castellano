@@ -25,7 +25,7 @@ column_widths = [2, 1]
 
 with st.container():
     st.write("---")
-    st.header("Que es lo que hago")
+    st.title("Que es lo que hago")
     st.write("##")
     col1, col2 = st.columns(column_widths)
 
