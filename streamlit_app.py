@@ -28,7 +28,7 @@ with st.container():
 
 with st.container():
     st.write("---")
-    st.header("My Projects")
+    st.header("Que es lo que hago")
     st.write("##")
     col1, col2 = st.columns([1, 2])
 
@@ -41,7 +41,7 @@ with st.container():
     with col2:
         st.header("Imagen en la columna 2")
         imagen = "scr/taxis.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, caption='Descripción de la imagen', use_column_width=True)
+        st.image(imagen, caption='Descripción de la imagen', use_column_width=True, width=300)
 
 
 
