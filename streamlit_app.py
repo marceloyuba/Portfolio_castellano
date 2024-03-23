@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 st.set_page_config(page_icon="scr/fondo.jpg", layout="wide")
            
 def local_css(file_name):
@@ -40,7 +41,12 @@ with st.container():
         )
         st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
     with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
+        st.markdown("""
+            <style>                     
+            background-image: url("https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/fondoTaxi.png?raw=true");
+            background-repeat: no-repeat;                        
+            </style>
+        """)
 
 
 
@@ -49,16 +55,16 @@ with st.container():
 
 
 
-page_bg_img = f"""
+page_bg_img = """
 <style>
 
-[data-testid="stAppViewContainer"] > .main {{
+[data-testid="stAppViewContainer"] > .main {
 background-image: url("https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/fondoTaxi.png?raw=true");
 background-position: top left;
 background-repeat: repeat;
 background-attachment: fixed;
 background-size: cover;
-}}
+}
 
 </style>
 """
