@@ -41,7 +41,7 @@ with st.container():
     with col2:
         st.header("Imagen en la columna 2")
         imagen = "scr/taxis.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, caption='Descripción de la imagen', width=100)
+        st.image(imagen, width=100)
 
 
 
