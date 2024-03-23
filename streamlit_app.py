@@ -6,7 +6,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Definir el estilo CSS para aplicar la fuente deseada
-css = """
+font = """
     <style>
         /* Aplicar la fuente a todos los elementos de texto */
         body {
@@ -16,7 +16,7 @@ css = """
 """
 
 # Aplicar el estilo CSS
-st.markdown(css, unsafe_allow_html=True)
+st.markdown(font, unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="Portfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
