@@ -37,7 +37,7 @@ with st.container():
     # En la segunda columna, puedes mostrar la imagen
     with col2:
         imagen = "scr/tec.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, width=300)
+        st.image(imagen)
 
 
 
