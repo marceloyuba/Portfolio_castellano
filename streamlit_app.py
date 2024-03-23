@@ -41,7 +41,7 @@ with st.container():
             - Limpieza de datos: Los datos crudos rara vez están en una forma lista para el análisis. A menudo necesitan ser limpiados y preprocesados para eliminar valores atípicos, valores faltantes, errores de entrada, etc.
             - Análisis exploratorio de datos (EDA): Este paso implica explorar los datos para comprender mejor sus características. Esto puede incluir la generación de estadísticas descriptivas, la visualización de datos y la identificación de patrones o relaciones.
             - Toma de decisiones basada en datos: Utilizar los insights obtenidos del análisis para ayudar en la toma de decisiones. Esto podría implicar recomendaciones para acciones específicas o ajustes en estrategias existentes.
-            I
+            
             """
         )
         st.write("Para lograr los objetivos necesarios, hago uso de estas tecnologias, tanto para analisis de dato como dieño de dashoards")
@@ -49,7 +49,7 @@ with st.container():
     # En la segunda columna, puedes mostrar la imagen
     with col2:
         imagen = "scr/tec.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen)
+        st.image(imagen, width=300)
 
 
 
