@@ -30,15 +30,15 @@ with st.container():
 
 
 
-page_bg_img = """
+page_bg_img = f"""
 <style>
-[data-testid="stAppViewContainer"] > .main {
+[data-testid="stAppViewContainer"] > .main {{
 background-image: url("https://github.com/marceloyuba/Portfolio_castellano/blob/main/scr/taxis.png?raw=true");
 background-position: top left;
 background-repeat: repeat;
 background-attachment: fixed;
 background-size: cover;
-}
+}}
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
