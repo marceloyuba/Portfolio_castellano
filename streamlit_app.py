@@ -21,13 +21,13 @@ with st.container():
     st.write("[Mi LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
 
-
+column_widths = [2, 1] 
 
 with st.container():
     st.write("---")
     st.header("Que es lo que hago")
     st.write("##")
-    col1, col2 = st.columns([1, 2])
+    col1, col2 = st.columns(column_widths)
 
     # En la primera columna, puedes agregar texto u otros elementos si lo deseas
     with col1:
