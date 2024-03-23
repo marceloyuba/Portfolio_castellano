@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_icon="scr/fondo.jpg", layout="wide")
+st.set_page_config(page_title="Portfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
            
 def local_css(file_name):
     with open(file_name) as f:
