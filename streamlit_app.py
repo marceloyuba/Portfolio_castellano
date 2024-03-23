@@ -8,7 +8,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-
+img_tec = Image.open("images/yt_lottie_animation.png")
 
 # ---- HEADER SECTION ----
 with st.container():        
@@ -23,7 +23,22 @@ with st.container():
 
 
 
-
+with st.container():
+    st.write("---")
+    st.header("My Projects")
+    st.write("##")
+    image_column, text_column = st.columns((1, 2))
+    with image_column:
+        st.image(img_tec)
+    with text_column:
+        st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
+        st.write(
+            """
+            Learn how to use Lottie Files in Streamlit!
+            Animations make our web app more engaging and fun, and Lottie Files are the easiest way to do it!
+            In this tutorial, I'll show you exactly how to do it
+            """
+        )
 
 
 
