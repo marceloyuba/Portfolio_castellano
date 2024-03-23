@@ -20,20 +20,6 @@ with st.container():
     st.write("[Mi LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
 
-"""
-def main():
-    
-    st.title('Dashboard de Power BI en Streamlit')
-    
-    # Inserta el iframe con la URL de tu dashboard de Power BI
-    st.markdown('<iframe width="1000" height="800" align = "center" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjNDA0YmItMmRhZC00ZDhlLWFmOWYtZTZiMWMxYWY3ODAzIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
-        
-if __name__ == '__main__':
-    main()
-"""
-
-
-
 
 
 
