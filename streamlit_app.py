@@ -1,5 +1,5 @@
 import streamlit as st
-
+from PIL import Image
 
 st.set_page_config(page_icon="scr/fondo.jpg", layout="wide")
            
@@ -8,6 +8,9 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
+
+img_contact_form = Image.open("images/yt_contact_form.png")
+img_tec = Image.open("scr/taxis.png")
 
 # ---- HEADER SECTION ----
 with st.container():        
@@ -24,30 +27,20 @@ with st.container():
 # ---- WHAT I DO ----
 with st.container():
     st.write("---")
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.header("What I do")
-        st.write("##")
+    st.header("My Projects")
+    st.write("##")
+    text_column, image_column = st.columns((1, 2))
+    with text_column:
+        st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
         st.write(
             """
-            On my YouTube channel I am creating tutorials for people who:
-            - are looking for a way to leverage the power of Python in their day-to-day work.
-            - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
-            - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-            - are working with Excel and found themselves thinking - "there has to be a better way."
-
-            If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+            Learn how to use Lottie Files in Streamlit!
+            Animations make our web app more engaging and fun, and Lottie Files are the easiest way to do it!
+            In this tutorial, I'll show you exactly how to do it
             """
         )
-        st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
-    with right_column:
-        st.markdown("""
-            <style>                     
-            background-image: url("https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/fondoTaxi.png?raw=true");
-            background-repeat: no-repeat;                        
-            </style>
-        """)
-
+    with image_column:
+       st.image(img_tec)
 
 
 
