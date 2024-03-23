@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 st.set_page_config(page_title="Portfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
            
 def local_css(file_name):
@@ -8,7 +9,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-img_tec = Image.open("images/yt_lottie_animation.png")
+img_tec = Image.open("scr/taxi.png")
 
 # ---- HEADER SECTION ----
 with st.container():        
