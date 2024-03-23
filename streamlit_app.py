@@ -39,7 +39,6 @@ with st.container():
 
     # En la segunda columna, puedes mostrar la imagen
     with col2:
-        st.header("Imagen en la columna 2")
         imagen = "scr/taxis.png"  # Reemplaza esto con la ruta de tu imagen
         st.image(imagen, width=100)
 
