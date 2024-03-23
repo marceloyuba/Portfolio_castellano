@@ -1,5 +1,5 @@
 import streamlit as st
-import Functions
+
 
 st.set_page_config(page_title="Porfolio Marcelo Yuba", page_icon="scr/fondo.jpg", layout="wide")
 
