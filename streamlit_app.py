@@ -30,18 +30,18 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_tec, unsafe_allow_html=True)
-    with text_column:
-        st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
-        st.write(
-            """
-            Learn how to use Lottie Files in Streamlit!
-            Animations make our web app more engaging and fun, and Lottie Files are the easiest way to do it!
-            In this tutorial, I'll show you exactly how to do it
-            """
-        )
+    col1, col2 = st.columns([1, 2])
+
+    # En la primera columna, puedes agregar texto u otros elementos si lo deseas
+    with col1:
+        st.header("Texto en la columna 1")
+        st.write("Puedes poner cualquier contenido aquí.")
+
+    # En la segunda columna, puedes mostrar la imagen
+    with col2:
+        st.header("Imagen en la columna 2")
+        imagen = "scr/taxis.png"  # Reemplaza esto con la ruta de tu imagen
+        st.image(imagen, caption='Descripción de la imagen', use_column_width=True)
 
 
 
