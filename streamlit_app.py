@@ -10,7 +10,7 @@ local_css("style/style.css")
 
 # ---- HEADER SECTION ----
 with st.container():        
-    st.subheader("Hola, soy Marcelo Yuba :wave:")
+    st.header("Hola, soy Marcelo Yuba :wave:")
     st.title("Un Data Analyst  y Data Scientist de Buenos Aires, Argentina")
     st.write(
         "Soy un apasionado en el analisis de datos usando, Power BI y Python, tratando de forma mas eficiente,  obtener resultados para tu negocio."
