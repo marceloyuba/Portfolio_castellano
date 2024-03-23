@@ -11,7 +11,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-img_tec = "scr/taxi.png"
+img_tec = "https://github.com/marceloyuba/Portfolio_castellano/blob/main/scr/taxis.png?raw=true"
 
 # ---- HEADER SECTION ----
 with st.container():        
@@ -32,7 +32,7 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.image(img_tec)
+        st.image(img_tec, unsafe_allow_html=True)
     with text_column:
         st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
         st.write(
