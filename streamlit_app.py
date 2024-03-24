@@ -52,7 +52,7 @@ with st.container():
         st.image(imagen, width=400)
     
     imagen2 = "scr/tecrec.png"     
-    st.image(imagen2, width=800)
+    st.image(imagen2, use_column_width=True)
 
 
 
