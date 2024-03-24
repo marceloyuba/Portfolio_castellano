@@ -52,21 +52,7 @@ with st.container():
         st.image(imagen, width=400)
     
     imagen2 = "scr/tecrec.png"     
-    st.markdown("""
-    <style>
-        .centered {
-            display: flex;
-            justify-content: center;
-            }
-    </style>
-    """, unsafe_allow_html=True)
-
-    # Agrega la imagen al contenedor con la clase "centered"
-    st.markdown('<h1 style="text-align: center;">Imagen Centrada</h1>', unsafe_allow_html=True)
-    st.markdown('<div class="centered">', unsafe_allow_html=True)
-    st.image(imagen2)
-    st.markdown('</div>', unsafe_allow_html=True)
-
+    st.image(imagen2, width=800)
 
 
 
