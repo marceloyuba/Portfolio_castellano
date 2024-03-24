@@ -51,7 +51,8 @@ with st.container():
         imagen = "scr/tec.png"  # Reemplaza esto con la ruta de tu imagen
         st.image(imagen, width=400)
 
-
+    imagen2 = "scr/tecrec.png"
+    st.image(imagen2)
 
 
 
